@@ -47,6 +47,30 @@ studied_loc = fav_location = staying_loc = "Bengaluru"    #Assigning one value t
 #OPERATOR TYPES   - 1)aritthematic +-*%/**exponenent //floor division 2)assignment = += -= *= //= **= 3)comparision/ relational == != >= <= < > 4)membership  in , not in5)identity is is not (to check the type of var) 6)logical not or and 7)bitwise | & ^ << >>
 
 #DATA STRUCTURES   - Advanced DataTypes/Sequences/Collections 1)String 2) List 3)Dictionary 4)Tuple 5)Set (DS-Whcih allows set of data) 2 operations 1)Creating & 2)fetching DATA from Obejct -> we can fetch by 2 types 1) Indexing(Forward & Backward Indexing) - One element at a time 2) Slicing- fetching set of elements
+
+#DS STRING TOPICS: 1)INDEXING 2)SLICING 3)CONCATNATION 4)REPEATATION 5)PACKING 6)UNPACKING 8)FUNCTIONS 9)IMMUTABILITY 10) ITEM ASSIGNMENT(no supports) 11)ITEM DELETION(not supports)
 #INDEXING     - fetching specific character by its Index Number SLICING  - fetchig set of characters by using Start and end Index Numbers(1) str[startnum:endnum] 2) str[startnum:endnum:increment_num])
 #PACKING AND UNPACKING - PACKING: 1) a+b+c 2) join(arg) - join([a,b,c]) UNPACKING: 1)NoOf New Variables = Nof Characters 
-#STRING FUNCTIONS: 1)len(len of string) 2)count(count noof occurances) 3)index(find the index of value) 4)lower(lowercase all) 5)upper(uppercase all) 6)swapcase(reverse the case of fun) 7)islower(to check all in lower True/False) 8)isupper(To check all uppercase True/False) 9)capitalize(in entire string firts character upper) 10)title(Each first character in word)
+#STRING FUNCTIONS: 1)len(len of string) 2)count(count noof occurances) 3)index(find the index of value) 4)lower(lowercase all) 5)upper(uppercase all) 6)swapcase(reverse the case of fun) 7)islower(to check all in lower True/False) 8)isupper(To check all uppercase True/False) 9)capitalize(in entire string firts character upper) 10)title(Each first character in word) 11)startswith(string starts with) 12)endswith() 13)replace('charcter','replcing value',no of characters to change) 14)split(',') -> gives output in list & default is space 15) strip() 16)lstrip() 17)rstrip
+st='***Python***'
+print(st.strip('*')) #output: 'Python'
+print(st.lstrip('*')) #output: 'Python***'
+print(st.rstrip('*')) #output: '***Python'
+st='*!*!*Python*!*!*'
+print(st.lstrip('*')) #output: '!*!*Python*!*!*'
+print(st.rstrip('*')) #output: '*!*!*Python*!*!'
+st1='python full stack'
+print(splt()) #output: ['python','full','stack']
+print(splt(' ')) #output: ['python','full','stack']
+print(splt(n)) #output: ['pytho',' full stack']
+
+#DS LIST TOPICS: 1)INDEXING 2)SLICING 3)CONCATNATION 4)REPEATATION 5)PACKING 6)UNPACKING 8)FUNCTIONS 9)MUTABILITY 10) ITEM ASSIGNMENT 11)ITEM DELETION 12) created by using [],list(),range()
+#LIST FUNCTIONS : 1)len() 2)count() 3)index() 4)max() 5)min() 6)sum() 7)all(all must be non zero values in list 0 and False) 8)any(any one in list not zero) 8) to add new data in list append() 9)extend() 10)insert(index,element) 11)remove(targets first element) 12)pop(targets index and removes , pop removes last index will go) 13)clear(all list to empty) 14)del(delete can be used to del entire list and each element also)
+#NESTED LIST: 
+lst1=[10,20]
+lst2=[a,b]
+lst3=[True,False]
+lst=[lst1,lst2,lst3]
+print(lst) #output: [[10,20],[a,b],[True,False]]
+
+#DS TUPLE TOPICS: 1)INDEXING 2)SLICING 3)CONCATNATION 4)REPEATATION 5)PACKING 6)UNPACKING 8)FUNCTIONS 9)IMMUTABILITY 10) ITEM ASSIGNMENT(no supports) 11)ITEM DELETION (no supports) 12) created by using [],list(),range()
