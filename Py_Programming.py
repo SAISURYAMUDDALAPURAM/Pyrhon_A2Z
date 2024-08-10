@@ -74,3 +74,7 @@ lst=[lst1,lst2,lst3]
 print(lst) #output: [[10,20],[a,b],[True,False]]
 
 #DS TUPLE TOPICS: 1)INDEXING 2)SLICING 3)CONCATNATION 4)REPEATATION 5)PACKING 6)UNPACKING 8)FUNCTIONS 9)IMMUTABILITY 10) ITEM ASSIGNMENT(no supports) 11)ITEM DELETION (no supports) 12) created by using [],list(),range()
+#TUPLE can be created by using 1) () 2) without using () 3)tuple() , Tuple doesnot allow ADDING & item DELETION FUNCTIONS (its static) allows -> del tuple_var - Tuple is immutable form of LIST
+
+#DS SET TOPICS: Created by using 1){ } 2)set(), Diffrent from String , List, Tuple (will not allow duplicates and Order will change no indexing of elements), set not support indexing and slicing , support packing and unapcaking , set is mutable object
+#SET SPECIAL FUNCTIONS: 1) union() 2)intersection() 3)difference() 4)symmetric_difference() 5)intersection_update() 6) difference_update() 7)symmetric_differemce_update()
