@@ -24,4 +24,13 @@ class Solution(object):
         :rtype: List[int]
         """
 """
+lst1=list(map(int, input().split())) 
+target_num1 = eval(input())
 
+def twoSum(lst,target_num):
+    for num1 in range(len(lst)):
+        for num2 in range(num1+1,len(lst)):
+            if(lst[num1]+lst[num2]==target_num):
+                return (num1,num2)
+                
+print(list(twoSum(lst1,target_num1)))
