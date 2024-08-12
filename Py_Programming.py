@@ -83,3 +83,14 @@ print(lst) #output: [[10,20],[a,b],[True,False]]
 #DS DICTIONARIES TOPICS: Collection of Key:Value Pairs , no key duplicates should be there
 #CALL OPERATIONS ON DICTINOARIES: C U R D operations 1) Create: Creating /Adding new pairs to existing dict 2) Update: Modifythe Values of keys 3)Retrieve : Display values of keys 4) Delete: Deleting exidting dict / deleting existing key value pairs 5)pop(if no arguments gives error) 6)popitem(last item by default - not allows key) 7)keys() 8)values() 9) items(key value pair comes as tuple) 10)update()
 #NESTED DICTIONARY : data={student1:{'name':'sai','age':10}},student2:{'name':'surya','age':15}}
+
+#CONTROL STATEMENTS : 1) CONDITIONAL STATEMENTS 2)ITERATIVE STATEMENTS 3)TRANSFER STATEMENTS
+#CONDITIONAL STATEMENTS : Control the flow of Program execution 1)Simple If 2) if-else statement 3)elif statement 4) nested if statemwnt
+#ITERATIVE STATEMENTS :  1) FOR LOOP 2) WHILE LOOP
+#TRANSFER STATEMENTS :  1) BREAK 2) CONTINUE 3) PASS 
+
+#FORMAT SPECIFYERS : x=10 ;  print('{} this flower bracket is placeholder'.format(x))
+#range() : range(startnum,endnumber,increment), range(startnum,endnumber), range(endnumber)
+
+
+
