@@ -91,6 +91,54 @@ print(lst) #output: [[10,20],[a,b],[True,False]]
 
 #FORMAT SPECIFYERS : x=10 ;  print('{} this flower bracket is placeholder'.format(x))
 #range() : range(startnum,endnumber,increment), range(startnum,endnumber), range(endnumber)
+#FUNCTIONS: Set of Reusable statements which are used to perform specific task
+"""
+def maxOfTwoNums(a,b): #def -> defining function maxOfTwoNums-> function deifination a,b->(formal / positional) decide by developer argumnets , we can have default arguments by developer while develping fun
+  if a>b:
+    print(a)
+  else:
+    print(b)
 
-
+maxOfTwoNums(10,20) #maxOfTwoNums -> function call #10,20-> actual arguments (fixed length argumnets) (variable length arguments)  if maxOfTwoNums(b=20,a=10) is called keyword argumentif we use formal arguments in funcall toassign the actual value then
+"""
+#when actual value is there default value is ignored actual value is taken
+"""
+def display(a,b=10):
+    print(a)
+    print(b)
+display(20,1000)
+"""
+#Fixed length Non Keyword Arguments
+"""
+def fun(a,b):
+ print(a)
+ print(b)
+fun(1,2)
+"""
+#Fixed Length keyword Arguments 
+"""
+def fun(a,b):
+ print(a)
+ print(b)
+fun(a=11,b=22)
+"""
+#Variale Length Non Keyword Arguments
+"""
+def fun(a,b,*c):     ##### *c= *args
+ print(a)
+ print(b)
+ print(c) #gives tuple
+fun(11,22,33,44,55,66)
+output: 11, 22, (33,44,55,66)
+"""
+#Variable Length Keyword Arguments
+"""
+def fun(a,b,*c,**d):     ##### *c= *args    **d=**kwargs
+ print(a)
+ print(b)
+ print(c) #gives tuple
+ print(d) #gives dict
+fun(11,22,33,44,55,66,x=10,y=20,z=30)
+output: 11, 22, (33,44,55,66), {'x':10,'y':20,'z':30}
+"""
 
