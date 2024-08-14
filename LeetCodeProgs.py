@@ -34,3 +34,17 @@ def twoSum(lst,target_num):
                 return (num1,num2)
                 
 print(list(twoSum(lst1,target_num1)))
+
+
+#PROBLEM 2 Seprate even and odd numbers from list
+lst=list(map(int, input().split()))
+def evenOddEval(lst_of_num):
+    new_lst=[]
+    new_lst2=[]
+    for i in lst_of_num:
+        if i%2==0:
+            new_lst.append(i)
+        else:
+            new_lst2.append(i)
+    print('Even Num List:{}   Odd Num List:{}'.format(new_lst,new_lst2))
+evenOddEval(lst)
