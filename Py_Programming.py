@@ -141,4 +141,5 @@ def fun(a,b,*c,**d):     ##### *c= *args    **d=**kwargs
 fun(11,22,33,44,55,66,x=10,y=20,z=30)
 output: 11, 22, (33,44,55,66), {'x':10,'y':20,'z':30}
 """
+#COMPREHENSIONS: Compreshensions is an advance level of writing programs 
 
