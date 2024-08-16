@@ -142,4 +142,86 @@ fun(11,22,33,44,55,66,x=10,y=20,z=30)
 output: 11, 22, (33,44,55,66), {'x':10,'y':20,'z':30}
 """
 #COMPREHENSIONS: Compreshensions is an advance level of writing programs 
+#SYNTAX: < expression > <for loop > <if condition >
 
+#Find Vowels or not 
+#print(i for i in st if i in 'aeiou')
+#Odd num
+#print([i for i in num if i%2!=0])
+"""
+print([i for i in strt_vowel.split() if i[0] in 'aeiouAEIOU']) #list
+print(tuple(i for i in strt_vowel.split() if i[0] in 'aeiouAEIOU')) #tuple
+print({i for i in strt_vowel.split() if i[0] in 'aeiouAEIOU'})#set
+"""
+#print(i,end='\n')
+"""
+LAMBDA EXPRESSIONS/FUNCTIONS:
+Nameless Functions/ Ananymus Functions / use and Throw functions
+
+syntax: 
+lambda <arg_list> : <expressions>
+"""
+"""
+function to add two numbers
+
+#  def addition(a,b):
+    c=a+b
+    print(c)
+ addition(10,20)
+
+#x=lambda a,b: a+b
+print(x(10,20))
+"""
+# FILTER function  - TO filter the data
+"""
+it is a FOR loop you can filter the entire valid values for condition
+
+#even number program
+lst=[10,20,30,1]
+print(list(filter(lambda i: i%2==0,lst)))
+"""
+"""
+#MAP - to apply same logic for all the elements
+
+#print(list(map(lambda i:i+10,lst)))
+#list(map(int, input().split())) -> while taking inputs 
+# print([i**2 for i in lst])
+#print(list(map(lambda i: i**2,lst)))
+
+#REDUCE - reduce function is part of "functools" modules
+#all elements in list if reduced to one functionality is called reduce 
+#ex: if highest number in list 
+#ex: if lowest number in list
+#ex: sum of elements in list
+
+(lambda a,b: a if a>b else b,lst)-> its gemeral but for list 
+
+import functools as f
+print(f.reduce(lambda a,b: a if a>b else b,lst))
+max(lst)
+import functools as f
+print(f.reduce(lambda a,b: a if a>b else b,lst))
+min(lst)
+import functools as f
+print(f.reduce(lambda a,b: a+b,lst))
+sum(lst)
+"""
+
+"""
+File handling / File I/O Operations
+Py file       Text file
+1)Input /add/write DATA - Adding data to file/writing data to file
+2)Output / Fetch/ read DATA - getting data / reading data from file
+
+RULES:
+1. Open file
+2. Write the data 
+3. close the file 
+
+
+Syntax:
+open('filename.txt-> if file path is not specified by default it goes and search in folder where python is installed','mode of operation')
+
+
+
+"""
