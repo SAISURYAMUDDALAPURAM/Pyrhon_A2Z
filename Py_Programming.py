@@ -255,3 +255,52 @@ e=a.readline(2)
 #print(d)
 print(e)
 """
+"""
+##a=open('dummy.txt','w')
+##a.write("sai\nHello World,\nSai Surya\n Here are we with File IO operations\n file is filled")
+##a.close()
+
+#a=open('C:\\Users\\smuddala\\Desktop\\Process_Improvement_Project\\new.txt','w')
+#a.write("sai")
+#a.close()
+##a=open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r')
+##b=a.read()
+##print(b)
+##print(type(b))
+#b=a.read()
+#c=a.readline()
+#d=a.read(3)
+#e=a.readline(2)
+#print(b)
+#print(c)
+#print(d)
+#print(e)
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').read())
+print(len(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').read()))
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines()[-1])
+print('_____________________________________________________________________')
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines()[1])
+
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines()[2].split(',')[1][0])
+
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines()[-1].split(',')[-1][-1])
+
+print([i for i in open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').read().replace('\n',',').split(',') if i[0].upper()=='S'])
+
+
+print([i for i in open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').read().replace('\n',',').split(',') if i[-1].lower() in 'aeiou'])
+
+print([i.split(',')[0] for i in open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines()])
+print("######################################################################")
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').read())
+print("######################################################################")
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readline())
+print("######################################################################")
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines())
+print("######################################################################")
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').read(3))
+print("######################################################################")
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readline(3))
+print("######################################################################")
+print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines(1))
+"""
