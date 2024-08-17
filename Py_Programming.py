@@ -222,6 +222,36 @@ RULES:
 Syntax:
 open('filename.txt-> if file path is not specified by default it goes and search in folder where python is installed','mode of operation')
 
+if not specify path 
+interpreter goes to path and find file is it not find it will create on with that file and it will open it 
 
+a=open('oursai.txt','w')
+a.write('Hello Studnts')
+a.close()
 
+a=open('oursai.txt','a') - append on it will append at end
+
+a.write('Hello Studnts alll')
+a.close()
+
+cusor stand at end of data is called FILE POINTER
+#WRITE
+a=open('dummy.txt','w')
+a.write("sai\nHello World,\nSai Surya")
+a.close()
+
+a=open('C:\\Users\\smuddala\\Desktop\\Process_Improvement_Project\\new.txt','w')
+a.write("sai")
+a.close()
+
+#READ
+a=open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r')
+#b=a.read()
+#c=a.readline()
+#d=a.read(3)
+e=a.readline(2)
+#print(b)
+#print(c)
+#print(d)
+print(e)
 """
