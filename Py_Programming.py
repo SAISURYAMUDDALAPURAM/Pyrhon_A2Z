@@ -304,3 +304,63 @@ print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlin
 print("######################################################################")
 print(open('C:\\Users\\smuddala\\Desktop\\PYTHON_TRIALS\\dummy.txt','r').readlines(1))
 """
+"""
+REGULAR EXPRESSIONS: RE is used to Write Patterns
+
+Check Pattren of Mobile Number / Check the pattren of Email we will have RE program/ vehicle registration numbers / perfect password / valid password checker 
+
+If we want to write pattrens we should know
+1) Character Classes : 2 types
+ -A) System Defined- (/s-trying to match space character) (/S-to match everything except space) (/d - to match digits(0-9) (/D- to match everything execpt digits))
+                    (/w-trying to match word (lower case/upper case/digits,underscores) ) (/S-to match everything except word (special characters)) (. dot - to match word includeing special characters)
+                    
+ -B) User Defined - requirement - (only lower case match, only uppercase match , or only lower case a,b,c,d)
+                [a-z] -> to match all lowercase characters
+                [abcd]-> to match either a or b or c or d 
+                [a-zA-z] -> to match lower and upper characters
+                [^a-z]   -> to match everything excpet lower case characters
+                [0-9]   -> to match all digits
+                [a-zA-Z0-9]-> to match all lower upper and digit characters
+                
+2) Quantifiers : if you want to match 2 spaces / 3 spaces or / 
+                  a   -> if we want to march a
+                  a?  -> a will match 0 time or 1 times
+                  a+  -> a will match 1 or more times
+                  a*  -> a will match 0 times or 1 or more times
+                  a{3} -> a will match exactly 3 times
+                  a{2,3} -> a will min 2 times and max 3 times
+                  a{3,}  -> a will match min 3 times and max no limit
+                   
+3) RE Functions:
+          -A) match()
+          -B) fullmatch()
+          -C) search()
+          -D) findall()
+          -E) split()
+          -F) sub() and subn()
+
+
+import re
+#name=input("Enter Any String: ")
+#m=re.match("Py",name) #only tries to match at beginning of the string
+#m=re.fullmatch("Py",name) #tries to match fully in string
+#m=re.search("Py",name) #tries to match at entire sentacece
+
+m=re.findall('[a-z]','Na1*Tm2@Hx3$')
+m=re.findall('[^a-z]','Na1*Tm2@Hx3$')
+m=re.findall('[a-zA-Z0-9]','Na1*Tm2@Hx3$')
+m=re.findall('[^a-zA-Z0-9]','Na1*Tm2@Hx3$')
+m=re.findall('\W','Na1*_ Tm2@H_x 3$')
+m=re.findall('.','Na1*_ Tm2@H_x 3$')
+#Substitute
+m=re.sub('a','_','Sai Surya')#it replaces all 
+m=re.subn('a','_','Sai Surya')#it replaces and it will give count of no of times sub
+m=re.split(',','Nara,yana , Tech ,House')
+
+print(m)
+if m==None:
+    print('No Matching')
+else:
+    print('Matching')
+"""
+
